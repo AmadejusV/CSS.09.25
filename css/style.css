@@ -1,0 +1,76 @@
+/* Elemento selektoriai*/
+/**{
+	text-align:center;
+}*/
+article{
+	color: red;
+}
+#promo{
+	color:blue;
+}
+/*article#promo{
+	color:yellow;
+} galima ir taip, bet praktikoj nedaroma*/
+.blue{
+color:blue;
+}
+.center{
+text-align: center;
+}
+.bg-silver{
+	background-color:silver;
+}
+/*-----------attribute selectors----------*/
+a[href="http://www.delfi.lt"]{
+	color:red;
+}
+a[href="http://www.google.lt"]{
+	color:cyan;
+}
+a[href="http://www.facebook.lt"]{
+	color:green;
+}
+a[href="http://www.lrytas.lt"]{
+	color:blue;
+}
+a[href="http://www.smm.lt"]{
+	color:grey;
+}
+h1{
+	color:green;
+}
+a[href$=".docx"]{
+	color:red;
+}
+a[href$=".xlsx"]{
+	color:purple;
+}
+
+a:hover{
+	color:red;
+}
+/*--------------PSEUDO CLASSES--------------*/
+/*.todo ul :first-child{	/* taikymas pirmam elementui*/
+/*	color: red;
+}
+.todo ul :last-child{
+	color: blue;				
+}				*/
+/*.todo ul :nth-child(2){		/* taikymas antram child elementui*/
+/*	color: aqua;
+}								*/
+/*.todo ul :nth-child(2n+1){	/* kas antra zymi (2n), pradeda nuo pirmo elemento(+1)*/
+/*	color: green;
+}			*/
+/*-------------------------------------*/
+.todo ul li{
+	color:red;
+}
+/*--------------taikymassis i  vieta kur daryt pakeitimus-------------*/
+.todo ul>li>ul>li{
+	color:green;
+}
+/*-------------galima daryt kelia i elementus ir be rodykliu--------*/
+.todo ul li ul li{
+	color:green;
+}
